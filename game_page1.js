@@ -60,7 +60,7 @@ if(typeCount >=300){
     }
 
     function win() {
-        if (typeCount >= 300) {
+        if (typeCount >= 350) {
             
             document.getElementById("results").innerHTML = "<label>You Win</label>";
             timeLeft = 0;
