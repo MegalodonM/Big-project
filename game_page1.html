@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>GAMEWAY: Spacebar Challenge</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+        <center>
+            <h1 class="header">
+                GAMEWAY
+                <sup>
+                    <img src="logo.png" style="width: 20px; height: 20px;">
+                </sup>
+            </h1>
+            <h2>Can you hit the spacebar 300 times in 1 minute ?!?!</h2>
+            <h3>You have: <span id="timer">0</span> seconds remaining!</h3>
+
+            <button id="playAgainButton" type="button" onclick="start_it()"> Start </button>
+
+            <label>Score: <span id="score">0</span></label>
+            <div id="results"></div>
+        </center>
+    </div>
+    <script src="game_page1.js"></script>
+</body>
+</html>
